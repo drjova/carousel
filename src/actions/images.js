@@ -1,5 +1,5 @@
 import { IMAGES_ERROR, IMAGES_REQUEST, IMAGES_SUCCESS } from './actionTypes';
-import API_URL from '../constants';
+import { API_URL } from '../constants';
 
 function requestImages() {
   return {
@@ -14,10 +14,11 @@ function errorImages(payload) {
   };
 }
 
-function successImages(payload) {
+function successImages(data) {
+  const images = data.map(item => item.largeImageURL);
   return {
     type: IMAGES_SUCCESS,
-    payload,
+    payload: images,
   };
 }
 
@@ -26,7 +27,7 @@ export default function fetchImages() {
     dispatch(requestImages());
     try {
       const response = await http.get(API_URL);
-      dispatch(successImages(response.data));
+      dispatch(successImages(response.data.hits));
     } catch (error) {
       dispatch(errorImages(error.response && error.response.data));
     }
