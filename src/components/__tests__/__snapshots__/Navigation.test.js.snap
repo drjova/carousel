@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation component should render only next button 1`] = `
+<div
+  id="navigation"
+>
+  <button
+    onClick={[MockFunction]}
+  >
+    Next
+  </button>
+</div>
+`;
+
+exports[`Navigation component should render only previous button 1`] = `
+<div
+  id="navigation"
+>
+  <button
+    onClick={[MockFunction]}
+  >
+    Prev
+  </button>
+</div>
+`;
+
+exports[`Navigation component should render with both buttons 1`] = `
+<div
+  id="navigation"
+>
+  <button
+    onClick={[MockFunction]}
+  >
+    Prev
+  </button>
+  <button
+    onClick={[MockFunction]}
+  >
+    Next
+  </button>
+</div>
+`;
