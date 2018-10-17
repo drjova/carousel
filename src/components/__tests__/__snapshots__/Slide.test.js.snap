@@ -3,31 +3,12 @@
 exports[`Slide component should render \`\`slide\`\` 1`] = `
 <div
   className="slide"
-  style={
-    Object {
-      "backgroundImage": "url(url)",
-      "backgroundPosition": "center top",
-      "backgroundRepeat": "no-repeat",
-      "float": "left",
-      "height": "600px",
-      "width": "300px",
-    }
-  }
-/>
-`;
-
-exports[`Slide component should render nothing 1`] = `
-<div
-  className="slide"
-  style={
-    Object {
-      "backgroundImage": "url(undefined)",
-      "backgroundPosition": "center top",
-      "backgroundRepeat": "no-repeat",
-      "float": "left",
-      "height": "600px",
-      "width": "300px",
-    }
-  }
-/>
+>
+  <img
+    src="url"
+  />
+  <h3>
+    Title
+  </h3>
+</div>
 `;

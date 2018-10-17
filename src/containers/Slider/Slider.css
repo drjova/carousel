@@ -1,0 +1,23 @@
+#slider {
+  width: 100%;
+}
+#slider-wrapper {
+  background-color: #fff;
+  height: 350px;
+  padding: 25px 0;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+#slider h1 {
+  color: #4a739e;
+  margin-bottom: 5px;
+  font-size: 26px;
+}
+#slider-navigation {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

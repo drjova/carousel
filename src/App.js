@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Slider from './containers/Slider';
+import Slider from './containers/Slider/Slider';
 
 export default class App extends Component {
   render() {
