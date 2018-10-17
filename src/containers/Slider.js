@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
@@ -21,15 +21,12 @@ class Slider extends Component {
   renderNavigation() {}
 
   render() {
-    const { loading } = this.props;
-    if (loading) {
-      return <div>Loading</div>;
-    }
+    const { loading, images } = this.props;
     return (
-      <div>
-        {this.renderNavigation()}
-        {this.renderImages()}
-      </div>
+      <Fragment>
+        <Loading loading={loading} />
+        {images && this.renderImages()}
+      </Fragment>
     );
   }
 }

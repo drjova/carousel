@@ -6,7 +6,6 @@ const Slider = ({ image, width, height }) => {
     backgroundImage: `url(${image})`,
     backgroundPosition: 'center top',
     backgroundRepeat: 'no-repeat',
-    float: 'left',
     width: `${width}px`,
     height: `${height}px`,
   };

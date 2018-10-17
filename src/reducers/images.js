@@ -4,7 +4,7 @@ import {
   IMAGES_SUCCESS,
 } from '../actions/actionTypes';
 
-const initialState = {
+export const initialState = {
   loading: false,
   data: [],
   error: null,
